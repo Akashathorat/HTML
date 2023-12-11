@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Job Portal Form</title>
+</head>
+<body style="background-color: pink;">
+    <center>
+        <h1 style="color:aqua;">Job Portal Form</h1>
+    </center>
+
+	<form action="../Demo16/submit.html" method="post" enctype="multipart/form-data">
+		<fieldset>
+			<legend><b>Employee Information</b></legend>
+			<label>name :</label>
+			<input type="test" name="sname" placeholder="Enter Your name" autofocus required>
+            <br>
+            <br>
+			<label>Email :</label>
+			<input type="Email" name="semail" placeholder="Enter Your email" required>
+            <br>
+            <br>
+			<label>mobile no :</label>
+			<input type="number" name="phoneno"  value="number" required>
+            <br>
+            <br>
+            <label>Lanline no :</label>
+			<input type="number" name="phoneno"  value="number" required>
+            <br>
+            <br>
+			<label>DOB :</label>
+			<input type="date" name="dob">
+            <br>
+            <br>
+            <label>Gender :</label>
+			<input type="radio" name="gender" value="male"><b>male</b>
+			<input type="radio" name="gender" value="female"><b>female</b>
+            <br>
+            <br>
+            <label>Marital Status :</label>
+            <input type="radio" value="married"><b>married</b>
+            <input type="radio" value="Unmarried"><b>Unmarried</b>
+            <br>
+            <br>
+			<label>photo :</label>
+			<input type="file" name="img">
+            <br>
+            <br>
+            <label>Resume :</label>
+			<input type="file" name="PDF" required>
+
+		</fieldset>
+
+		<fieldset>
+			<legend><b>Address & Skill's</b></legend>
+
+			<label>state :</label>
+			<select name="state" required>
+				<option value="">choose</option>
+				<option value="Ahamdnagar">Ahamdnagar</option>
+				<option value="Mumbai">Mumbai</option>
+				<option value="Pune">Pune</option>
+				<option value="Banglore">Banglore</option>
+			</select>
+            <br>
+            <br>
+			<label>Full Adress :</label>
+			<textarea name="adress" rows="3" cols="15"></textarea>
+            <br>
+            <br>
+			<label>Pincode :</label>
+			<input type="number" name="number" min="000000" max="999999" required>
+            <br>
+            <br>
+			<label>Your Skill's :</label>
+            <br>
+            <br>     
+			<input type="checkbox" name="course1" value="html"><b>Frontend Developer</b>
+			<input type="checkbox" name="course2" value="css"><b>Backend Developer</b>
+			<input type="checkbox" name="course3" value="js"><b>Full Stack Developer</b>
+            <br>
+            <br>
+            <label>Experience :</label>
+            <input type="radio" name="Experience"><b>Yes</b>
+            <input type="radio" name="Experience"><b>No</b>
+            <br>
+            <br>
+            <label>Employee ID :</label>
+			<input type="number" name="ID" min="0000" max="9999" required>
+            <br>
+            <br>
+            <label>password :</label>
+			<input type="password" name="password" required>
+            <br>
+            <br>
+			<input type="reset">
+			<input type="submit">
+            <br>
+            <br>
+			<button type="reset">Empty</button>
+			<button type="submit">Save</button>
+		</fieldset>
+		
+	</form>
+
+</body>
+</html>

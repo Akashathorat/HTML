@@ -1,0 +1,66 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Floppy Bird</title>
+    <style>
+        #bird {
+            height: 50px;
+            width: 50px;
+            background-color: 
+yellow;
+            position: absolute;
+            top: 50%;
+            left: 50px;
+        }
+        .pipe {
+            height: 300px;
+            width: 50px;
+            background-color: 
+green;
+            position: absolute;
+            bottom: 0;
+            animation: pipeMovement 2s infinite linear;
+        }
+        @keyframes pipeMovement {
+            0% {
+                left: 100%;
+            }
+            100% {
+                left: -50px;
+            }
+        }
+    </style>
+</head>
+<body onkeydown="jump()">
+    <div id="bird"></div>
+    <script>
+        function jump() {
+            var bird = document.getElementById("bird");
+            bird.style.top = (bird.offsetTop - 50) + "px";
+        }
+    </script>
+    <script>
+        var gameArea = document.body;
+        var bird = document.getElementById("bird");
+
+        setInterval(function () {
+            var birdBottom = parseInt(window.getComputedStyle(bird).getPropertyValue("top"));
+            var pipe = document.querySelector(".pipe");
+
+            if (birdBottom <= 0) {
+                alert("Game over!");
+            }
+
+            if (pipe) {
+                var pipeLeft = parseInt(window.getComputedStyle(pipe).getPropertyValue("left"));
+
+                if (pipeLeft <= 100 && pipeLeft > 0 && birdBottom <= 200) {
+                    alert("Game over!");
+                }
+            }
+        }, 10);
+    </script>
+</body>
+</html>
+```

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+</head>
+<body style="background-color: yellow;">
+	<form action="path" method="get/post" enctype="multipart/form-data">
+		<fieldset>
+			<legend>personal information</legend>
+			<label>name:</label>
+			<input type="test" name="sname" placeholder="Enter Your name" value="yash" autofocus autocomplete="off"><br><br>
+			<label>Email:</label>
+			<input type="Email" name="semail" placeholder="Enter Your email" value="yash@gmail.com" disabled><br><br>
+			<label>mobile no:</label>
+			<input type="number" name="phoneno"  value="9139430930" required><br><br>
+			<label>DOB</label>
+			<input type="date" name="dob"><br><br>
+			<label>Gender</label>
+			<input type="radio" name="gender" value="male" checked><b>male</b>
+			<input type="radio" name="gender" value="female"><b>female</b><br><br>
+			<label>photo</label>
+			<input type="file" name="img">
+		</fieldset>
+		<fieldset>
+			<legend> Adress and course and login info </legend>
+			<label>state</label>
+			<select name="state">
+				<option value="">choose</option>
+				<option value="ahamdnagar">ahamdnagar</option>
+				<option value="maha" selected>maha</option>
+				<option value="rajastan">rajastan</option>
+				<option value="gujrat">gujrat</option>
+			</select><br><br>
+			<label>Full adress</label>
+			<textarea name="adress" rows="4" cols="10"></textarea><br><br>
+			<label>Pincode</label>
+			<input type="number" name="number" value="414605" min="111111" max="999999" required><br><br>
+			<label>Course name</label>
+			<input type="checkbox" name="course1" value="html" checked><b>HTML</b>
+			<input type="checkbox" name="course2" value="css"><b>CSS</b>
+			<input type="checkbox" name="course3" value="js"><b>JS</b><br><br>
+			<label>Username</label>
+			<input type="text" name="username" value="yash" minlength ="8" maxlength="12" required><br><br>
+			<label>Password</label>
+			<input type="password" name="password" value="yashd143"><br><br>
+
+			<input type="reset">
+			<input type="submit"><br><br>
+			<button type="reset">empty</button>
+			<button type="submit">save</button>
+		</fieldset>
+		
+	</form>
+
+</body>
+</html>

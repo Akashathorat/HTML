@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Student Form</title>
+</head>
+<body style="background-color:rgb(179, 238, 40);">
+    <center>
+        <h1 style="color: orangered;">Student Form</h1>
+    </center>
+
+	<form action="submit.html" method="post" enctype="multipart/form-data">
+		<fieldset>
+			<legend><b>Student Information</b></legend>
+			<label>name :</label>
+			<input type="test" name="sname" placeholder="Enter Your Name" autofocus required>
+            <br>
+            <br>
+			<label>Email :</label>
+			<input type="Email" name="semail" placeholder="Enter Your Email" required>
+            <br>
+            <br>
+			<label>mobile no :</label>
+			<input type="number" name="number" placeholder="Enter Your Number" value="number" required>
+            <br>
+            <br>
+            <!-- <label>Lanline no :</label>
+			<input type="number" name="number" placeholder="Enter Your Number" value="number" required>
+            <br>
+            <br> -->
+			<label>DOB :</label>
+			<input type="date" name="dob">
+            <br>
+            <br>
+            <label>Gender :</label>
+			<input type="radio" name="gender" value="male"><b>male</b>
+			<input type="radio" name="gender" value="female"><b>female</b>
+            <br>
+            <br>
+			<label>photo :</label>
+			<input type="file" name="img">
+            <br>
+            <br>
+            <label>Resume :</label>
+			<input type="file" name="PDF" required>
+
+		</fieldset>
+
+        <!-- <fieldset>
+            <legend><b>Marital Status</b></legend>
+			<input type="radio" name="gender" checked><b>married</b>
+			<input type="radio" name="gender" checked><b>Unmarried</b><br><br>
+        </fieldset> -->
+
+		<fieldset>
+			<legend><b>Address & Skill's</b></legend>
+
+			<label>state :</label>
+			<select name="state" required>
+				<option value="">choose</option>
+				<option value="Ahamdnagar">Ahamdnagar</option>
+				<option value="Mumbai">Mumbai</option>
+				<option value="Pune">Pune</option>
+				<option value="Banglore">Banglore</option>
+			</select>
+            <br>
+            <br>
+			<label>Full Adress :</label>
+			<textarea name="adress" rows="3" cols="15"></textarea>
+            <br>
+            <br>
+			<label>Pincode :</label>
+			<input type="number" name="number" min="000000" max="999999" required>
+            <br>
+            <br>
+			<label>Select Subject :</label>
+            <br>
+            <br>
+			<input type="checkbox" name="course1" value="html"><b>HTML</b>
+			<input type="checkbox" name="course2" value="css"><b>CSS</b>
+			<input type="checkbox" name="course3" value="js"><b>JavaScript</b>
+            <input type="checkbox" name="course3" value="js"><b>Bootstrap</b>
+            <input type="checkbox" name="course3" value="js"><b>Java</b>
+            <input type="checkbox" name="course3" value="js"><b>Python</b>
+            <br>
+            <br>
+            <label>Student ID :</label>
+			<input type="number" name="ID" min="0000" max="9999" required>
+            <br>
+            <br>
+            <label>password :</label>
+			<input type="password" name="password" required>
+            <br>
+            <br>
+			<input type="reset">
+			<input type="submit">
+            <br>
+            <br>
+			<button type="reset">Empty</button>
+			<button type="submit">Save</button>
+		</fieldset>
+		
+	</form>
+
+</body>
+</html>
